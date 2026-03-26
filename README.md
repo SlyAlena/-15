@@ -8,10 +8,10 @@
     using namespace std;
 
     int main() {
-	  setlocale(LC_ALL, "Russian");
-	  int n;
-	  cin >> n;
-	  switch (n) {
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cin >> n;
+	switch (n) {
 		case 1: cout << "Стой"; break;
 		case 2: cout << "Готовься"; break;
 		case 3: cout << "Иди"; break;
@@ -25,11 +25,11 @@
     using namespace std;
 
     int main() {
-	  setlocale(LC_ALL, "Russian");
-	  int n;
-	  cin >> n;
-	  if(n % 2 == 0) cout << "Сегодня повезёт";
-	  else cout << "Лучше не рисковать";
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cin >> n;
+	if(n % 2 == 0) cout << "Сегодня повезёт";
+	else cout << "Лучше не рисковать";
     }
 
 Задание 3
@@ -38,25 +38,26 @@
     using namespace std;
 
     int main() {
-	  setlocale(LC_ALL, "Russian");
-	  int a, b, op;
-	  cin >> a >> b >> op;
-	  if (op == '+') {
+	setlocale(LC_ALL, "Russian");
+	int a, b, op;
+	cin >> a >> b >> op;
+	if (op == '+') {
 		cout << a + b;
 	}
-	  else if (op == '-') {
+	else if (op == '-') {
 		cout << a - b;
 	}
-	  else if (op == '*') {
+	else if (op == '*') {
 		cout << a * b;
 	}
-	  else if (op == '/') {
+	else if (op == '/') {
 		if (b == 0) {
 			cout << "Делить на ноль нельзя!";
 		}
 		else {
 			cout << a / b;
 
+			}
 		}
 	}
 
@@ -66,8 +67,8 @@
     using namespace std;
 
     int main() {
-	  setlocale(LC_ALL, "Russian");
-	  int n;
+	setlocale(LC_ALL, "Russian");
+	int n;
     cin >> n;
     if(n < 0) cout << "Мороз";
     else if(n >= 0 && n <=20) cout << "Прохладно";
