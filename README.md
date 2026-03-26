@@ -239,14 +239,15 @@
 
     int main() {
     setlocale(LC_ALL, "Russian");
-    int n;
+    int n, reverse = 0;
     cin >> n;
-    for(int i = 1; i <= n; ++i) {
-    cin >> n;
-    }
-    for(int j = n; j >= 1; --j) {
-    cout << n;
-      }
+	while(n > 0) {
+	rem = n % 10;
+	reverse = reverse * 10 + rem;
+	n /= 10;
+
+	cout << reverse;
+    
     }
     
 
